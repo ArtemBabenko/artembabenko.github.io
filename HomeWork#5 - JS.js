@@ -94,7 +94,7 @@ function cursorCheck(str) {
 }
 
 console.log('Task #8 Cursor Check"'.toLocaleUpperCase())
-console.log('Hello I am OstaPcursorCheck : ' + cursorCheck('Hello I am OstaP'));
+console.log('Hello I am OstaP : ' + cursorCheck('Hello I am OstaP'));
 console.log('Superman is here : ' + cursorCheck('Superman is here'));
 
 // Task #9 To Uppercase *************************************************
