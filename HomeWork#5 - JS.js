@@ -77,27 +77,22 @@ console.log('Task #6 "Print Piramid"'.toLocaleUpperCase())
 printPiramid(3);
 
 // Task #7 First And Last To Upper **************************************
+
 const firstAndLastToUpper = (str) => str[0].toLocaleUpperCase() + str.toLowerCase().slice(1, str.length - 1) + str[str.length - 1].toLocaleUpperCase();
 
 console.log('Task #7 "First And Last To Upper"'.toLocaleUpperCase());
 console.log(firstAndLastToUpper('abc'));
 
-// Task #8 Cursor Check
-function cursorCheck(str) {
-    let arrStr = str.toLowerCase().split(" ");
-    let result = null;
-    arrStr.forEach(function(value) {
-        (value === 'ironman' || value === 'cursor' || value === 'ostap') ? result = true: result = false;
-    });
+// Task #8 Cursor Check *************************************************
 
-    return result;
-}
+let cursorCheck = (str) => (~str.toLowerCase().indexOf('ironman') || ~str.toLowerCase().indexOf('ostap') || ~str.toLowerCase().indexOf('cursor')) ? true : false;
 
 console.log('Task #8 Cursor Check"'.toLocaleUpperCase())
 console.log('Hello I am OstaP : ' + cursorCheck('Hello I am OstaP'));
 console.log('Superman is here : ' + cursorCheck('Superman is here'));
 
 // Task #9 To Uppercase *************************************************
+
 function toUppercase(str) {
     let lower = 'abcdefghijklmnopqrstuvwxyz ';
     let upper = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ ';
