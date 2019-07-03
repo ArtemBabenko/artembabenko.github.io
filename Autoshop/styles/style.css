@@ -102,7 +102,9 @@ header {
 }
 
 .main-order-block {
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/img/park.png);
+    /* background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/img/park.png); */
+    background: url(/img/park.png);
+    opacity: 3;
     background-size: cover;
     background-repeat: no-repeat;
     padding-top: 154px;
