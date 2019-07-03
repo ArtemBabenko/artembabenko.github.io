@@ -1,6 +1,6 @@
 // Task #1 Converter ****************************************************
 
-const convert = (amount) => `Вы получите ${(amount * 8).toFixed(2)} грн`;
+const convert = (amount) => `You will get ${(amount * 8).toFixed(2)} grn`;
 
 console.log('Task #1 "Converter"'.toLocaleUpperCase());
 console.log(convert(1));
