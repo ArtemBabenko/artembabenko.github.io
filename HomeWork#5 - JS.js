@@ -56,7 +56,13 @@ console.log(sunRange(2, 4));
 
 // Task #5 Min **********************************************************
 
-let min = (a, b, c) => (a < b && a < c) ? a : (b < a && b < c) ? b : (c < a && c < b) ? c : false;
+function min(a, b, c) {
+    let strMin = arguments[0];
+    for (i = 0; i < arguments.length; i++) {
+        (strMin > arguments[i]) ? strMin = arguments[i]: false;
+    }
+    return strMin;
+}
 
 console.log('Task#5 "min"'.toLocaleUpperCase())
 console.log(min(1, 2, 3));
@@ -104,7 +110,7 @@ function toUppercase(str) {
     let arrStr = str.split('');
     let finalString = '';
     arrStr.forEach(function(value) {
-        finalString += letterArr.get(value);
+        (letterArr.get(value) != undefined) ? finalString += letterArr.get(value): finalString += value;
     });
 
     return finalString;
@@ -145,7 +151,7 @@ function fibonacci(n) {
             arrNumbers.push(arrNumbers[i - 1] + arrNumbers[i - 2]);
         }
     }
-    (n === 0) ? strFinal = 'Значение должно быть больше "0"': strFinal = arrNumbers[n];
+    (n === 0) ? strFinal = 'Value must be greater than "0"': strFinal = arrNumbers[n];
 
     return strFinal;
 }
