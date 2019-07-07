@@ -438,7 +438,7 @@ header {
     letter-spacing: 0.45px;
 }
 
-.warranty-text span:nth-child(2) ul {
+.warranty-text div ul {
     font-size: 14px;
     font-weight: 600;
     line-height: 1.71;
@@ -599,4 +599,52 @@ footer {
     font-size: 14px;
     color: #929292;
     padding-bottom: 5px;
+}
+
+
+/*******************************************************************************/
+
+@media(max-width: 780px) {
+    .logo {
+        display: flex;
+        flex-direction: column;
+        letter-spacing: 1.44px;
+    }
+    .logo span:nth-child(2) {
+        font-size: 14pt;
+    }
+    .button-contact {
+        display: none;
+    }
+    .main-order-block {
+        width: 100%;
+        background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/autopark.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding-top: 20px;
+        padding-bottom: 183px;
+    }
+    .time-order-text>div:nth-child(1) {
+        display: flex;
+        flex-direction: column;
+        font-size: 18pt;
+        font-weight: 700;
+        letter-spacing: 2.88px;
+        color: #ffffff;
+        text-transform: uppercase;
+        line-height: 40px;
+    }
+    .time-order-text>div:nth-child(2) {
+        display: flex;
+        flex-direction: column;
+        color: #ffffff;
+        font-family: "Helvetica Neue";
+        font-size: 24px;
+        line-height: 26px;
+        letter-spacing: 1.92px;
+    }
+    .item-time-block {
+        display: flex;
+        margin-top: 28px;
+    }
 }
