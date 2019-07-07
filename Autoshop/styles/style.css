@@ -478,14 +478,14 @@ header {
     flex-direction: column;
 }
 
-.payment-text span:nth-child(1) {
+.payment-text span {
     font-size: 18px;
     font-weight: bold;
     letter-spacing: 0.45px;
     padding-top: 54px;
 }
 
-.payment-text span:nth-child(2) {
+.payment-text div {
     font-size: 14px;
     font-weight: 600;
     line-height: 1.71;
