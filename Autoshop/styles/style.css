@@ -282,9 +282,17 @@ header {
     justify-content: space-between;
 }
 
-.reasons-small-img {
+.reasons-content {
     display: flex;
-    align-items: flex-end;
+    align-items: baseline;
+}
+
+.reasons-to-buy .col-lg-3 .reasons-small-img-header {
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 1.5;
+    letter-spacing: 0.4px;
+    color: #eccd0c;
 }
 
 .reasons-to-buy .col-lg-3 {
@@ -302,14 +310,6 @@ header {
     font-weight: 600;
     text-align: center;
     color: #8b8b8b;
-}
-
-.reasons-to-buy .col-lg-3 span:first-child {
-    font-size: 15px;
-    font-weight: bold;
-    line-height: 1.5;
-    letter-spacing: 0.4px;
-    color: #eccd0c;
 }
 
 .video-demonstration {
@@ -601,7 +601,7 @@ footer {
 
 /*******************************************************************************/
 
-@media(max-width: 780px) {
+@media(max-width: 576px) {
     header {
         width: 100%;
         height: 62px;
@@ -705,5 +705,126 @@ footer {
         font-size: 16px;
         line-height: 1.5;
         letter-spacing: 1.28px;
+    }
+    .char-content-paddind-mobile {
+        padding-left: 40px;
+    }
+    .column-content>span {
+        font-size: 12px;
+        line-height: 2;
+        letter-spacing: 0.35px;
+    }
+    .column-content>span:first-child {
+        font-size: 14px;
+        line-height: 2;
+        letter-spacing: 0.35px;
+    }
+    .two-mirrors-img-mobile {
+        width: 189px;
+        height: 189px;
+    }
+    .mirror-frame-mobile {
+        width: 223px;
+        height: 76px;
+    }
+    .mirror-center-mobile {
+        display: none;
+    }
+    .yellow-line {
+        padding-bottom: 19px;
+    }
+    .reasons-to-buy .col-lg-3 {
+        margin-top: 42px;
+    }
+    .video-demonstration video {
+        width: 276px;
+        height: 161px;
+    }
+    .saving-block-content {
+        margin-top: 28px;
+    }
+    .saving-block-content span:nth-child(1) {
+        font-size: 13px;
+        font-weight: 600;
+        line-height: 1.85;
+        letter-spacing: 0.33px;
+        text-align: center;
+    }
+    .saving-block-content span:nth-child(2),
+    .saving-block-content span:nth-child(2) span {
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 2;
+        letter-spacing: 0.4px;
+        margin-bottom: 23px;
+    }
+    .girl-mobile {
+        width: 273px;
+        height: 179px;
+    }
+    .saving-block-content:nth-child(1) div {
+        width: 273px;
+    }
+    .crash1-mobile {
+        width: 148px;
+        height: 73px;
+    }
+    .crash2-mobile {
+        width: 110px;
+        height: 73px;
+    }
+    .mirror-center-bigger-mobile {
+        width: 267px;
+        height: 106px;
+    }
+    #id {
+        width: 40px;
+        height: 40px;
+    }
+    .double-glass-mobile {
+        width: 267px;
+        height: 173px;
+    }
+    .our-parktronic .block-header {
+        margin-top: 50px;
+    }
+    .yellow-arrow,
+    .border-point {
+        display: none;
+    }
+    .our-parktronic-content {
+        padding-top: 36px;
+    }
+    .number-img {
+        width: 269px;
+        height: 202px;
+    }
+    .parktronic-article {
+        width: 269px;
+        font-size: 12px;
+        font-weight: 300;
+        line-height: 1.71;
+        letter-spacing: 0.35px;
+        text-align: left;
+    }
+    .face-avatar {
+        width: 269px;
+    }
+    .face-avatar img {
+        margin-right: 8px;
+    }
+    .delivery-and-warranty .block-header {
+        margin-top: 42px;
+    }
+    .warranty-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .warranty-text div {
+        width: 269px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
