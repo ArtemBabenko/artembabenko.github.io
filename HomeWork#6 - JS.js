@@ -99,14 +99,13 @@ function average(arr) {
     //     finalNumber += entry;
     // });
 
-    console.log(finalNumber / arr.length);
+    console.log((finalNumber / arr.length).toFixed(2));
 }
 
 console.log('Task #8 average'.toUpperCase());
 average([1, 4, 2]);
 
 // Task #9 concatFirstNestedArrays****************************************
-
 function concatFirstNestedArrays(arr) {
     //Var 1
     // return arr.reduce((accum, number) => accum.concat(number));
