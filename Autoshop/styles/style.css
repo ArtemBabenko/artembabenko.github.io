@@ -644,7 +644,6 @@ footer {
         padding: 0px 33pt 0px;
     }
     .time-order-text>div:nth-child(1) {
-        align-items: left;
         font-size: 20px;
         line-height: 1.71;
         letter-spacing: 1.12px;
