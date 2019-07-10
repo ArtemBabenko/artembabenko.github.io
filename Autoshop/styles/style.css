@@ -452,16 +452,22 @@ header {
     color: #333333;
 }
 
+.warranty-small-content {
+    display: flex;
+    justify-content: space-between;
+}
+
 .warranty-small-img {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
     padding-top: 57px;
 }
 
 .warranty-small-img-text {
-    display: flex;
-    justify-content: space-around;
-    font-size: 18px;
+    width: auto;
+    font-size: 16px;
     font-weight: bold;
     line-height: 1.33;
     letter-spacing: 0.45px;
@@ -697,7 +703,7 @@ footer {
         line-height: 1.53;
         letter-spacing: 1.52px;
     }
-    .block-header span:nth-child(1) {
+    .block-header span {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -826,5 +832,41 @@ footer {
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+    .payment-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .payment-text span {
+        font-size: 16px;
+        letter-spacing: 0.4px;
+        padding-top: 42px;
+    }
+    .payment-text div {
+        font-size: 13px;
+        line-height: 1.85;
+        letter-spacing: 0.33px;
+    }
+    .the-last-sentence .block-header {
+        margin-top: 46px;
+    }
+    #price-second {
+        width: 30%;
+        position: absolute;
+        display: block;
+        left: 70%;
+        bottom: 0%;
+    }
+    .the-last-sentence-content .contact-form:nth-child(1) {
+        margin-top: 28px;
+        margin-bottom: 28px;
+    }
+    .the-last-sentence .yellow-line {
+        padding-bottom: 46px;
+    }
+    footer {
+        height: 52px;
+        margin-top: 39px;
     }
 }
