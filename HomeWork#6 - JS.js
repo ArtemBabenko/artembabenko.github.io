@@ -1,5 +1,3 @@
-//Need to connect Moment and LoDash
-
 // Task #1 printTimeout**************************************************
 function printTimeout(str, n) {
     setTimeout(() => {
@@ -150,15 +148,24 @@ const users2 = [
 
 function filterUsersByMonth(users, month) {
     let arrFinal = [];
+
+    //Var. 1
+
+    // users.forEach(function(entry) {
+    //     let date = moment(entry.birthday, 'YYYY-MM-DD');
+    //     (date.format('MM') == month || date.format('MM') == 1 && month == 0) ? arrFinal.push(entry): false ; 
+    // });
+
+    //Var. 2
     users.forEach(function(entry) {
-        let date = moment(entry.birthday, 'YYYY-MM-DD');
-        if (date.format('MM') == month || date.format('MM') == 1 && month == 0) {
-            arrFinal.push(entry);
-        }
+        let dateBirthday = entry.birthday;
+        let monthUser = new Date(dateBirthday).getMonth() + 1;
+        (monthUser == month || monthUser == 1 && month == 0) ? arrFinal.push(entry): false;
     });
 
-    return arrFinal;
+    return (arrFinal);
 }
+
 
 console.log('Task #11 filter Users By Month'.toUpperCase());
 console.log(filterUsersByMonth(users2, 0));
@@ -173,10 +180,19 @@ const users3 = [
 
 function getAdultNames(users) {
     let finalStr = [];
-    let currentDate = moment().format('YYYY');
+
+    //Var. 1
+    // let currentDate = moment().format('YYYY');
+    // users.forEach(function(entry) {
+    //     let dateBirthday = moment(entry.birthday, 'YYYY-MM-DD').format('YYYY');
+    //     let age = currentDate - dateBirthday;
+    //     (age >= 18) ? finalStr.push(entry.name + ' ' + age): false;
+    // });
+
+    //Var. 2
     users.forEach(function(entry) {
-        let dateBirthday = moment(entry.birthday, 'YYYY-MM-DD').format('YYYY');
-        let age = currentDate - dateBirthday;
+        let dateBirthday = entry.birthday;
+        let age = new Date().getFullYear() - new Date(dateBirthday).getFullYear();
         (age >= 18) ? finalStr.push(entry.name + ' ' + age): false;
     });
 
