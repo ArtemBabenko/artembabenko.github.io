@@ -32,7 +32,7 @@ class Counter {
         if (this.num > this.endPoint) {
             console.log(this.num);
             progress();
-            this.num--;
+            this.num -= this.timeDelay / 1000;
         } else if (this.num === 0) {
             console.log(this.num);
             obg.textContent = this.num;
@@ -48,7 +48,7 @@ function pressingKey(timer, button, textMin, textSec, progress) {
 
     function progressLine() {
         let part = progress.clientWidth / timer.num.toString();
-        progress.style.width = progress.clientWidth - part + "px";
+        progress.style.width = progress.clientWidth - (part * (timer.timeDelay / 1000)) + "px";
     }
 
     function action(event) {
