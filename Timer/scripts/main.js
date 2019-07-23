@@ -6,10 +6,17 @@ class Counter {
         this.timeDelay = timeDelay;
     }
 
-    startCount(obg, obj2) {
+    startCount(textMin, textSec, progress) {
         this.timer = setInterval(() => {
-            this.checkCondition(obg, obj2);
-            obg.textContent = this.num;
+            this.checkCondition(textMin, textSec, progress);
+            let minCounter = doubleTime(parseInt(this.num / 60));;
+            let secCounter = doubleTime(this.num % 60);
+
+            textMin.textContent = minCounter;
+            textSec.textContent = secCounter;
+
+            (secCounter == "00") ? minCounter-- : false;
+
         }, this.timeDelay);
     }
 
@@ -21,10 +28,10 @@ class Counter {
         }
     }
 
-    checkCondition(obg, obj2) {
+    checkCondition(textMin, textSec, progress) {
         if (this.num > this.endPoint) {
             console.log(this.num);
-            obj2();
+            progress();
             this.num--;
         } else if (this.num === 0) {
             console.log(this.num);
@@ -33,72 +40,76 @@ class Counter {
         }
         return this.num;
     }
+
+}
+
+
+function pressingKey(timer, button, textMin, textSec, progress) {
+
+    function progressLine() {
+        let part = progress.clientWidth / timer.num.toString();
+        progress.style.width = progress.clientWidth - part + "px";
+    }
+
+    function action(event) {
+        if (button.textContent == 'Start') {
+            timer.startCount(textMin, textSec, progressLine);
+            button.textContent = 'Pause';
+        } else if (button.textContent == 'Pause') {
+            timer.pauseCount();
+            button.textContent = 'Start';
+        }
+    }
+
+    button.addEventListener('click', action);
+}
+
+function autoPlay(timer, button, textMin, textSec, progress) {
+
+    function progressLine() {
+        let part = progress.clientWidth / timer.num.toString();
+        progress.style.width = progress.clientWidth - part + "px";
+    }
+
+    if (timer.autoPlay == true) {
+        timer.startCount(textMin, textSec, progressLine);
+        button.textContent = 'Pause';
+    }
+}
+
+function initiation(textMin, textSec, timer) {
+    textMin.textContent = doubleTime(parseInt(timer.num / 60));
+    textSec.textContent = doubleTime(timer.num % 60);
+}
+
+function doubleTime(val) {
+    let str = val + "";
+    if (str.length < 2) {
+        return "0" + str;
+    } else {
+        return str;
+    }
 }
 
 // First timer
-const myTimer = new Counter(60, true, 1000);
+const myTimer = new Counter(90, true, 1000);
 
 let buttonKey = document.querySelector('#timer1-button');
-let text = document.querySelector('.timer1-text');
-text.textContent = myTimer.num;
+let textMin = document.querySelector('#timer1-min');
+let textSec = document.querySelector('#timer1-sec');
+let progress = document.querySelector('#timer1-progress');
 
-function progressLine1() {
-    let progress = document.querySelector('#timer1-progress');
-    let part = progress.clientWidth / myTimer.num.toString();
-    console.log(part)
-    progress.style.width = progress.clientWidth - part + "px";
-}
-
-function button1(myTimer) {
-
-    function btn1(event) {
-        if (buttonKey.textContent == 'Start') {
-            myTimer.startCount(text, progressLine1);
-            buttonKey.textContent = 'Pause';
-        } else if (buttonKey.textContent == 'Pause') {
-            myTimer.pauseCount();
-            buttonKey.textContent = 'Start';
-        }
-    }
-
-    buttonKey.addEventListener('click', btn1);
-}
+initiation(textMin, textSec, myTimer);
+pressingKey(myTimer, buttonKey, textMin, textSec, progress);
 
 // Second timer
-const myTimer2 = new Counter(500, true, 2000);
+const myTimer2 = new Counter(600, true, 2000);
 
 let buttonKey2 = document.querySelector('#timer2-button');
-let text2 = document.querySelector('.timer2-text');
-text2.textContent = myTimer2.num;
+let textMin2 = document.querySelector('#timer2-min');
+let textSec2 = document.querySelector('#timer2-sec');
+let progress2 = document.querySelector('#timer2-progress');
 
-function progressLine2() {
-    let progress = document.querySelector('#timer2-progress');
-    let part = progress.clientWidth / myTimer2.num.toString();
-    console.log(part)
-    progress.style.width = progress.clientWidth - part + "px";
-}
-
-function button2(myTimer2) {
-    function btn2(event) {
-        if (buttonKey2.textContent == 'Start') {
-            myTimer2.startCount(text2, progressLine2);
-            buttonKey2.textContent = 'Pause';
-        } else if (buttonKey2.textContent == 'Pause') {
-            myTimer2.pauseCount();
-            buttonKey2.textContent = 'Start';
-        }
-    }
-    buttonKey2.addEventListener('click', btn2);
-}
-
-function autoPlay() {
-    if (myTimer2.autoPlay == true) {
-        myTimer2.startCount(text2, progressLine2);
-        buttonKey2.textContent = 'Pause';
-    }
-}
-
-
-autoPlay();
-button1(myTimer);
-button2(myTimer2);
+initiation(textMin2, textSec2, myTimer2);
+autoPlay(myTimer2, buttonKey2, textMin2, textSec2, progress2);
+pressingKey(myTimer2, buttonKey2, textMin2, textSec2, progress2);
