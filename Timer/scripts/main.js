@@ -68,7 +68,7 @@ function autoPlay(timer, button, textMin, textSec, progress) {
 
     function progressLine() {
         let part = progress.clientWidth / timer.num.toString();
-        progress.style.width = progress.clientWidth - part + "px";
+        progress.style.width = progress.clientWidth - (part * (timer.timeDelay / 1000)) + "px";
     }
 
     if (timer.autoPlay == true) {
