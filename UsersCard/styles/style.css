@@ -1,0 +1,132 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.container-style {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/************** input **************/
+
+.input-style {
+    width: 50%;
+}
+
+.input-content-style {
+    background-color: lightskyblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 16px;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.user-name-style {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 16px;
+}
+
+.user-age-style {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 16px;
+}
+
+.add-botton-style {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 92px;
+    height: 32px;
+    margin: 16px;
+    border-radius: 4px;
+    background-color: lightgreen;
+    user-select: none;
+}
+
+.add-botton-style:active {
+    background-color: lightseagreen;
+}
+
+.text-style {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+/************** card container **************/
+
+.card-container-style {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    border-left: 1px dashed lightslategray;
+    margin: 16px;
+    padding: 0px 16px;
+}
+
+.user-card {
+    width: 200px;
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px 16px 8px;
+    background-color: lightsalmon;
+    border-radius: 4px;
+}
+
+.user-card-name {
+    margin: 8px;
+}
+
+.user-card-age {
+    margin: 8px;
+}
+
+.user-card-button {
+    display: flex;
+    justify-content: space-between;
+    margin: 16px 8px 8px 8px;
+}
+
+.card-button-delete {
+    margin-right: 20px;
+    padding: 6px;
+    border-radius: 4px;
+    background-color: lightgreen;
+    border: none;
+    user-select: none;
+}
+
+.card-button-delete:active {
+    background-color: lightseagreen;
+}
+
+.card-button-save {
+    background-color: lightgreen;
+    padding: 6px;
+    border-radius: 4px;
+    border: none;
+    user-select: none;
+}
+
+.card-button-save:active {
+    background-color: lightseagreen;
+}
