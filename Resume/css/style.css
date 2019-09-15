@@ -91,7 +91,7 @@
         .photo {
             height: 250px;
             width: 285px;
-            background-image: url(/img/profile-photo.jpg);
+            background-image: url(../img/profile-photo.jpg);
             background-size: contain;
             background-repeat: no-repeat;
         }
