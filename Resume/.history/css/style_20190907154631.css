@@ -1,0 +1,11 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.logo {
+    height: 40hr;
+    display: flex;
+    justify-content: center;
+    background-color: gray;
+}

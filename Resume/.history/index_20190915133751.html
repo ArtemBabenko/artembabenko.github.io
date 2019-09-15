@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="font-awesome/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">Artem Babenko</div>
+    </header>
+    <section class="carusel-section">
+        <div id="video-carousel-example2" class="carousel slide carousel-fade" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#video-carousel-example2" data-slide-to="0" class="active"></li>
+                <li data-target="#video-carousel-example2" data-slide-to="1"></li>
+                <li data-target="#video-carousel-example2" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active">
+                    <div class="view">
+                        <video class="video-fluid" autoplay loop muted>
+                            <source src="video/slide1.mp4" type="video/mp4" />
+                        </video>
+                    </div>
+                    <div class="carousel-caption">
+                        <div class="animated fadeInDown">
+                            <h3 class="h3-responsive">Light mask</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="view">
+                        <video class="video-fluid" autoplay loop muted>
+                            <source src="video/slide2.mp4" type="video/mp4" />
+                        </video>
+                        <div class="mask rgba-purple-slight"></div>
+                    </div>
+                    <div class="carousel-caption">
+                        <div class="animated fadeInDown">
+                            <h3 class="h3-responsive">Super light mask</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="view">
+                        <video class="video-fluid" autoplay loop muted>
+                            <source src="video/slide3.mp4" type="video/mp4" />
+                        </video>
+                        <div class="mask rgba-purple-slight"></div>
+                    </div>
+                    <div class="carousel-caption">
+                        <div class="animated fadeInDown">
+                            <h3 class="h3-responsive">Super light mask</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#video-carousel-example2" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#video-carousel-example2" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        </div>
+    </section>
+    <div id="separator"></div>
+    <section class="resume-section">
+        <div class="container container-info">
+            <div class="row profile-row">
+                <div class="col-lg-5 profile-info-col">
+                    <div class="profile-photo">
+                        <div class="photo"></div>
+                    </div>
+                    <div class="profile-info">
+                        <h3 class="heading heading-light">Profile</h3>
+                        <p class="profile-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem fugit nihil labore corrupti ipsum omnis neque recusandae aut non voluptates voluptatibus, voluptatum expedita sit. Architecto, repellendus et! Ullam, ea voluptatibus?
+                        </p>
+                        <div class="contacts">
+                            <div class="contacts-item">
+                                <h4 class="contacts-title">
+                                    <i class="fas fa-phone-volume"></i> Phone
+                                </h4>
+                                <a href="tel:+380935474714" class="contacts-text">+380 935 47 47 14</a>
+                            </div>
+                            <div class="contacts-item">
+                                <h4 class="contacts-title">
+                                    <i class="far fa-envelope"></i> Email
+                                </h4>
+                                <a href="mailto:artembabenko.work@gmail.com" class="contacts-text">artembabenko.work@gmail.com</a>
+                            </div>
+                            <div class="contacts-item">
+                                <h4 class="contacts-title">
+                                    <i class="fas fa-globe-americas"></i> Web
+                                </h4>
+                                <a href="http://www.example.com" class="contacts-text">www.example.com</a>
+                            </div>
+                            <div class="contacts-item">
+                                <h4 class="contacts-title">
+                                    <i class="fas fa-map-marker-alt"></i> Home
+                                </h4>
+                                <address class="contacts-text">example</address>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7 resume">
+                    <div class="resume-wrap">
+                        <div class="content-for-logo">
+                            <div class="logo-lines logo-lines-left">
+                                <div class="logo-line"></div>
+                                <div class="logo-line"></div>
+                                <div class="logo-line"></div>
+                            </div>
+                            <div class="logo-img">A/B</div>
+                            <div class="logo-lines logo-lines-right">
+                                <div class="logo-line"></div>
+                                <div class="logo-line"></div>
+                                <div class="logo-line"></div>
+                            </div>
+                        </div>
+                        <div class="about">
+                            <h1 class="name">Artem Babenko</h1>
+                            <span class="position">Web Developer/Designer</span>
+                        </div>
+                        <div class="objective">
+                            <h2 class="heading heading-dark">Objective</h2>
+                            <ul class="list">
+                                <li class="list-item">
+                                    <p class="list-item-text">I`m looking for a position in a company where i cen use and improve my FrontEnd developer skills.
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="education">
+                            <h2 class="heading heading-dark">Education</h2>
+                            <ul class="list">
+                                <li class="list-item">
+                                    <h4 class="list-item-title">Institute of Entrepreneurship "Strategy"</h4>
+                                    <span class="list-item-date">Sep 2005 - Jun 2010</span>
+                                    <p class="list-item-text">
+                                        <span>Qualification: Specialist in automated systems;</span>
+                                        <span>Study program: "Software for automated systems".</span>
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="qualification">
+                            <h2 class="heading heading-dark">Qualification</h2>
+                            <ul class="list">
+                                <li class="list-item">
+                                    <h4 class="list-item-title">FrontEnd developer course in "Cursor" campaing.</h4>
+                                    <span class="list-item-date">Jun 2019 - Sep 2019</span>
+                                    <p class="list-item-text">
+                                        <span>Present my projects on the course:</span>
+                                        <span> - <a href="https://artembabenko.github.io/Autoshop/index.html">AutoShop (WebSite)</a></span>
+                                        <span> - <a href="https://artembabenko.github.io/Piano/index.html">Piano</a></span>
+                                        <span> - <a href="https://artembabenko.github.io/Timer/index.html">Timer</a></span>
+                                        <span> - <a href="https://artembabenko.github.io/UsersCard/index.html">CardList</a></span>
+                                        <span> - <a href="https://artembabenko.github.io/Space/index.html">Space</a></span>
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="expirience">
+                            <h2 class="heading heading-dark">Expirience</h2>
+                            <ul class="list">
+                                <li class="list-item">
+                                    <h4 class="list-item-title">Media Agency "WinWin"</h4>
+                                    <span class="list-item-date">Kyiv, 2018 - Present</span>
+                                    <p class="list-item-text">
+                                        <span> - Technical specialist</span>
+                                        <span> - Android developer (Trainee)</span>
+                                        <span> - Content manager (Joomla / Wordpress / Simpla)</span>
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="personal-qualities">
+                            <h2 class="heading heading-dark">Personal qualities</h2>
+                            <ul class="list">
+                                <li class="list-item">
+                                    <h4 class="list-item-title">My personal qualities:</h4>
+                                    <p class="list-item-text">
+                                        <span> - Honest</span>
+                                        <span> - Patient</span>
+                                        <span> - Flexible</span>
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="special-skills">
+                            <h2 class="heading heading-dark">Special skills</h2>
+                            <ul class="list">
+                                <li class="list-item">
+                                    <h4 class="list-item-title">My special skills</h4>
+                                    <span class="list-item-date">Date axample</span>
+                                    <p class="list-item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel ea laboriosam aliquam ipsum voluptas fugiat distinctio odit ut corporis, consectetur rerum, excepturi nulla et adipisci quos minima! Fugit, explicabo aperiam.
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div id="separator"></div>
+    <footer>
+        <div class="footer-wrap">
+
+        </div>
+    </footer>
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>

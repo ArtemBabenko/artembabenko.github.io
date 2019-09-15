@@ -1,0 +1,16 @@
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.header {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    height: 105vh;
+    padding-top: 20px;
+}
+
+.nav {
+    display: flex;
+}

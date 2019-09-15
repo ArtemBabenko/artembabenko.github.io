@@ -1,0 +1,27 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.logo {
+    position: absolute;
+    height: 7vh;
+    left: 50%;
+    margin-left: -140px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 3vh;
+    color: white;
+    font-weight: 600;
+    border-bottom: 1px solid grey;
+    z-index: 2;
+}
+
+.carousel {
+    height: 100vh;
+}
+
+.carousel-inner video {
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+}

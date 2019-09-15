@@ -1,0 +1,14 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.logo {
+    height: 7vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Hepta Slab', serif;
+    font-size: 2vh;
+    background-color: gray;
+}

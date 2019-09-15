@@ -1,0 +1,100 @@
+/* Navigation*/
+
+.navbar {
+    background-color: transparent;
+}
+
+.scrolling-navbar {
+    transition: background .5s ease-in-out, padding .5s ease-in-out;
+}
+
+.top-nav-collapse {
+    background-color: #34456a;
+}
+
+footer.page-footer {
+    background-color: #34456a;
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar {
+        background-color: #34456a;
+    }
+}
+
+
+/* Necessary for full page carousel*/
+
+html,
+body,
+.view {
+    height: 100%;
+}
+
+
+/* Carousel*/
+
+.carousel,
+.carousel-item,
+.carousel-item.active {
+    height: 100%;
+}
+
+.carousel-inner {
+    height: 100%;
+}
+
+.carousel .carousel-item video {
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+</style>
+/* * {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: green;
+}
+
+.logo {
+    position: absolute;
+    height: 7vh;
+    left: 50%;
+    margin-left: -10vh;
+    margin-top: 4vh;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 3vh;
+    color: white;
+    font-weight: 600;
+    z-index: 2;
+}
+
+.carousel {
+    height: 100vh !important;
+    overflow: hidden;
+}
+
+.carousel-inner {
+    display: flex;
+    overflow: visible;
+}
+
+.carousel-inner video {
+    position: absolute;
+    left: 50%;
+    max-width: none !important;
+    min-height: 400vh;
+    min-width: 100%;
+    position: absolute;
+    top: 50vh;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+} */

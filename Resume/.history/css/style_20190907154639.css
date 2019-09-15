@@ -1,0 +1,12 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.logo {
+    height: 40px;
+    ;
+    display: flex;
+    justify-content: center;
+    background-color: gray;
+}
