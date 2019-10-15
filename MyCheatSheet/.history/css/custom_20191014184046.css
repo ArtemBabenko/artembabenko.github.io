@@ -1,0 +1,14 @@
+body {
+    padding: 100;
+    background-image: url(/img/sprite.jpg);
+}
+
+h4 {
+    color: white;
+    background-color: rgb(90, 116, 93);
+}
+
+#gridId4 h2 {
+    background-color: rgb(117, 63, 112);
+    color: white;
+}

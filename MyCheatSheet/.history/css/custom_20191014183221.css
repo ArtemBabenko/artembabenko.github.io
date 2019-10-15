@@ -1,0 +1,18 @@
+body {
+    padding: 100;
+    background-image: url(/img/sprite.jpg);
+}
+
+h4 {
+    color: white;
+    background-color: rgb(90, 116, 93);
+}
+
+.masonryPanel {
+    background-color: green;
+    /* border-radius: 5px; */
+}
+
+h2 {
+    background-color: green;
+}

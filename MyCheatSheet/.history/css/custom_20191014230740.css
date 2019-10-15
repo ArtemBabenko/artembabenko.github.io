@@ -1,0 +1,97 @@
+body {
+    padding: 100;
+    background-image: url(/img/dark_wood.png)
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+}
+
+.nav a {
+    padding: 5px 5px;
+    margin: 10px 10px;
+    color: white;
+    background-color: green;
+    border-radius: 4px;
+}
+
+h4 {
+    color: white;
+    background-color: rgb(90, 116, 93);
+}
+
+#gridId4 h2 {
+    background-color: rgb(117, 63, 112);
+    color: white;
+}
+
+#gridId6 h2 {
+    background-color: rgb(75, 68, 50);
+    color: white;
+}
+
+#gridId7 h2 {
+    background-color: rgb(63, 117, 76);
+    color: white;
+}
+
+#gridId12 h2 {
+    background-color: rgb(185, 157, 79);
+    color: white;
+}
+
+#gridId2 h2 {
+    background-color: rgb(65, 113, 158);
+    color: white;
+}
+
+#gridId9 h2 {
+    background-color: rgb(218, 165, 32);
+    color: white;
+}
+
+#gridId3 h2 {
+    background-color: rgb(94, 71, 138);
+    color: white;
+}
+
+#gridId8 h2 {
+    background-color: rgb(76, 155, 128);
+    color: white;
+}
+
+#gridId11 h2 {
+    background-color: rgb(255, 127, 80);
+    color: white;
+}
+
+#gridId1 h2 {
+    background-color: rgb(255, 127, 80);
+    color: white;
+}
+
+#gridId18 h2 {
+    background-color: rgb(205, 92, 92);
+    color: white;
+}
+
+#gridId17 h2 {
+    background-color: rgb(105, 105, 105);
+    color: white;
+}
+
+#gridId13 h2 {
+    background-color: rgb(139, 69, 19);
+    color: white;
+}
+
+#gridId15 h2 {
+    background-color: rgb(165, 42, 42);
+    color: white;
+}
+
+#gridId14 h2 {
+    background-color: rgb(112, 128, 144);
+    color: white;
+}
